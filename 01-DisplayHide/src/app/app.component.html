@@ -1,0 +1,36 @@
+<h1>Bienvenido querido muggle</h1>
+
+<form  >
+  <div class="row">
+    <div class="col-auto">
+      <span>¿ Estás preparado?</span>
+      
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+        <button class="btn btn-primary" 
+                (click)="toggleShow()" type="button">
+            Descubre la magia
+        </button>
+
+        <!-- <button class="btn btn-primary" 
+        >
+        Ocultar
+        </button> -->
+
+        </div>
+        </div>
+</form>
+
+<div class="row mt-5" *ngIf="isShow"
+      id="divshow"
+   
+    >
+    <div class="col">
+        <div class="alert alert-primary">
+           AVADA KEDAVRA!!
+            <iframe src="https://giphy.com/embed/xT5LMxGzbgJkUZjdte" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-magic-spells-xT5LMxGzbgJkUZjdte">via GIPHY</a></p>
+        </div>
+    </div>
+</div>
