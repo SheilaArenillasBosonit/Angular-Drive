@@ -1,0 +1,13 @@
+<h2>Componente Padre</h2>
+<div class="row">
+<div class="cols"> 
+<button class="btn btn-primary  "  (click)="EjecularEventoService()" >Use service del padre</button>
+<button class="btn btn-primary "  (click)="EjecularEventoInput()">Use Input Property del padre</button>
+<button class="btn btn-primary "  (click)="EjecularEventoObservable()">Use Observable del padre </button>
+</div>
+</div>
+
+<!-- Mensaje emitido desde el hijo -->
+<h3>{{mensajePadre}}</h3>
+<!-- Insertamos el componente hijo -->
+<app-hijo (miEvento)="getMensaje($event)"></app-hijo>
