@@ -1,0 +1,26 @@
+<div class="container_traffic">
+
+    <!-- Para el color rojo  -->
+    <div class="circle_traffic_back">
+
+        <div class="circle_traffic circle_red"
+            *ngIf="this.formulario.value.mode && this.formulario.value.select === 'red'"></div>
+
+    </div>
+    <!-- Para el color amarillo -->
+    <div class="circle_traffic_back">
+
+        <div class="circle_traffic circle_yellow"
+            *ngIf="this.formulario.value.mode && this.formulario.value.select === 'yellow'"></div>
+
+    </div>
+
+    <!-- Para el color verde -->
+    <div class="circle_traffic_back">
+
+        <div class="circle_traffic circle_green"
+            *ngIf="this.formulario.value.mode && this.formulario.value.select === 'green'"></div>
+
+    </div>
+
+</div>

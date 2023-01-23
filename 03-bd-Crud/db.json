@@ -1,0 +1,44 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "canela",
+      "email": "canela@hotmail.com",
+      "contraseña": 12344,
+      "contraseña2": 12344,
+      "ofertas": true,
+      "pais": "España",
+      "ciudad": "Madrid"
+    },
+    {
+      "id": 2,
+      "nombre": "Dani",
+      "email": "Dani@hotmail.com",
+      "contraseña": 12345,
+      "contraseña2": 12345,
+      "ofertas": false,
+      "pais": "Italia",
+      "ciudad": "Roma"
+    },
+    {
+      "id": 3,
+      "nombre": "",
+      "contraseña": "",
+      "contraseña2": "",
+      "email": "",
+      "ofertas": false,
+      "pais": "",
+      "ciudad": ""
+    },
+    {
+      "id": 4,
+      "nombre": "sheila",
+      "contraseña": "sssss",
+      "contraseña2": "sssss",
+      "email": "Sheila18.sa@gmail.com",
+      "ofertas": true,
+      "pais": "",
+      "ciudad": "ddf"
+    }
+  ]
+}

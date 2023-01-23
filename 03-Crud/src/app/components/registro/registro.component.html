@@ -1,0 +1,112 @@
+<h1>Registro usuarios</h1>
+<hr>
+<div class="grid">
+    <div class="col-2">
+
+        <form autocomplete="off" (ngSubmit)="guardar()" [formGroup]="miFormulario" >
+            <!-- Nombre de usuario  -->
+          
+                <label > Nombre de usuario</label>
+                
+                <input type="text"
+                formControlName="nombre"
+                class="form-control"
+                placeholder="Nombre del usuario">
+                <span class="form-text text-danger"
+                *ngIf="campoEsValido('nombre') ">Este campo es obligatorio</span>
+
+                
+                
+          
+
+            <!-- Contraseña  -->
+            
+                <label >Contraseña</label>
+                
+                     <input type="password"
+                             formControlName="contraseña"
+                             class="form-control">
+                     <span class="form-text text-danger" 
+                            *ngIf="campoEsValido('contraseña')">Debe tener mas de 6 caracteres</span>
+                   
+        
+
+             <!-- Confirmar Contraseña  -->
+          
+                <label >Confirmar la contraseña</label>
+                
+                     <input type="password"
+                        formControlName="contraseña2"
+                        class="form-control">
+                        <span class="form-text text-danger"
+                        *ngIf="campoEsValido('contraseña2')">Las contraseñas deben ser iguales</span>
+            
+                
+
+             <!-- Email  -->
+             
+                <label  >Email</label>
+                
+                    <input type="email"
+                        formControlName="email"
+                        class="form-control">
+                        <span class="form-text text-danger"
+                        *ngIf="campoEsValido('email')">Campo obligatorio</span>
+            
+               
+
+             <!--  Ofertas promocionales -->
+            
+                <label>Quiero recibir ofertas
+                </label>
+                 
+                <input type="checkbox"
+                formControlName="ofertas"
+                >
+
+          
+
+             <!-- País  -->
+           
+                <label >Seleccione su País</label>
+               <select formControlName="pais" class="form-control">
+                <option value="" >Seleccione su País</option>
+                 <option *ngFor="let pais of paises"
+                [value]="pais.name" >{{pais.name}}</option> 
+               </select>
+        
+
+             <!-- Ciudad  -->
+            
+                <label >Ciudad</label>
+                
+                <input type="text" formControlName="ciudad"
+                class="form-control">
+                <span class="form-text text-danger"
+                *ngIf="campoEsValido('ciudad')" >Campo obligatorio</span>
+
+              
+
+             <!-- Boton  -->
+            
+           
+               <button type="submit"  class="mt-2 float-end button_pointier ">Crear</button>
+            
+          
+        </form>
+    </div>
+
+
+
+<!-- Para mostrar los usuarios -->
+
+<div class="col-10">
+
+    <app-usuarios (editarUsuario)="editarUsuario($event)"></app-usuarios>
+  
+
+</div>
+</div>
+
+
+

@@ -1,0 +1,49 @@
+
+{ 
+"personajes": [
+  {
+      "id": 1,
+      "personaje": "Harry James Potter",
+      "casaDeHogwarts": "Gryffindor"   
+  },
+  {
+      "id": 2,
+      "personaje": "Hermione Jean Granger",
+      "casaDeHogwarts": "Gryffindor"
+     
+  },
+  {
+      "id": 3,
+      "personaje": "Ron Weasley",
+
+      "casaDeHogwarts": "Gryffindor"
+     
+  },
+  {
+      "id": 13,
+      "personaje": "Luna Lovegood",
+      "casaDeHogwarts": "Ravenclaw"
+      
+  },
+  {
+      "id": 14,
+      "personaje": "Draco Malfoy",
+      "casaDeHogwarts": "Slytherin"
+      
+  },
+ 
+  
+  {
+      "id": 20,
+      "personaje": "Severus Snape",
+      "casaDeHogwarts": "Slytherin"
+      
+  },
+  {
+      "id": 21,
+      "personaje": "Bellatrix Lestrange",
+      "casaDeHogwarts": "Slytherin"
+      
+  }
+]
+}

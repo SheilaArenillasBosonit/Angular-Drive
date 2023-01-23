@@ -1,0 +1,43 @@
+<h2>Usuarios</h2>
+<hr>
+    <table  >
+       
+       
+        <tr >
+            <th class="th">Nombre de usuario</th>
+            <th class="th">Correo</th>
+            <th class="th">Quiere recibir ofertas</th>
+            <th class="th">Pais</th>
+            <th class="th">Ciudad</th>
+            <th class="th">Acciones</th>
+
+        </tr>
+  
+    
+
+
+    
+    
+    
+        <tr *ngFor=" let usuario of usuarios">
+            <td class="th">{{usuario.nombre}}</td>
+            <td class="th">{{usuario.email}}</td>
+            <td class="th">
+                <span *ngIf="usuario.ofertas"><i class="bi bi-check"></i></span>
+                    <span *ngIf="!usuario.ofertas"><i class="bi bi-times-circle"></i></span>
+            </td >
+            <td class="th">{{usuario.pais}}</td>
+            <td class="th">{{usuario.ciudad}}</td>
+            <td class="th">
+
+                <i class="bi bi-pencil-fill"></i>
+
+                <i class="bi bi-trash3-fill"></i>
+
+            </td>
+            
+        </tr>
+    
+   
+
+    </table>

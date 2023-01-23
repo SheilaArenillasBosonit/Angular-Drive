@@ -1,0 +1,28 @@
+
+    <h2>Controles</h2>
+    <hr>
+
+    <form [formGroup]="miFormulario" >
+        <div class="row">
+            <div class="col-3">
+                <select class="form-select" formControlName="select">
+                    <option value="red">Rojo</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="green">Verde</option>
+
+                </select>
+            </div>
+
+            <div class="col-6">
+                <label for="Check" > Encendido/Apagado</label>
+                <input type="checkbox" id="Check" formControlName="mode" >
+            </div>
+        </div>
+    </form>
+
+    <div >
+        <app-semaforo [formulario]="miFormulario"></app-semaforo>
+    </div>
+
+    
+

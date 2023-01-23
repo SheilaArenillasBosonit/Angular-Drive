@@ -1,0 +1,21 @@
+<h2>Ubicación</h2>
+<hr>
+<div class="row">
+    <div class="col">
+       <app-personaje-input
+       (onEnter)="buscar($event)"
+       >
+    </app-personaje-input>
+    </div>
+</div>
+<hr>
+<div *ngIf="hayError" 
+ class="alert alert-danger">
+    El personaje {{termino}} no existe
+</div>
+
+<div *ngIf="!hayError" class="row">
+    <div class="col">
+        <app-personaje-tabla [personajes]="personajes"></app-personaje-tabla>
+    </div>
+</div>
