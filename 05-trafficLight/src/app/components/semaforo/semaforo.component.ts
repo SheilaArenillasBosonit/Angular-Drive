@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SemaforoComponent implements OnInit {
 
-  @Input() formulario: any;
+  @Input() formulario: any
 
   constructor() { }
 

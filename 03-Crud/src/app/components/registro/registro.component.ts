@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PaisesService } from '../../services/paises.service';
 import { Usuario, Pais } from '../../interfaces/interface';
 import { UsuarioService } from '../../services/usuario.service';
-
 import { emailPattern } from '../../services/email.service';
 import { ValidatorService } from '../../services/validator.service';
 import { finalize } from 'rxjs';
